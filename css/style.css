@@ -167,15 +167,50 @@ a {
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     color: rgba(255, 255, 255, 0.93);
-    padding: 10px 20.9px;
     display: block;
+    padding: 0 20px;
+    line-height: 45px;
     border-left: 2px solid rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
+}
+
+.main-menu>li>a:hover {
+    color: hsla(35, 80%, 70%, 1);
+}
+
+.main-menu>li>a:hover:after {
+    content: "";
+    display: block;
+    border-top: 2px solid #181818;
 }
 
 .main-menu ul {
     list-style-type: none;
     background: lime;
     position: absolute;
+}
+
+.about-html {
+    display: block;
+}
+
+.about-css {
+    display: none;
+}
+
+.web-standards {
+    display: none;
+}
+
+.web-accesibility {
+    display: none;
+}
+
+.qna {
+    display: none;
+}
+
+.archive {
     display: none;
 }
 

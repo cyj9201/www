@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>float 속성 익히기</title>
+    <style>
+        .box {
+            background: yellow;
+            width: 500px;
+        }
+        
+        .box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .box img {
+            float: right;
+            position: relative;
+            right: -50px;
+        }
+        
+        .note {
+            background: pink;
+            /*margin-top: 100px;*/
+            /*clear: both;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../images/news.gif" alt=""> 강 장관과 틸러슨 장관은 이날 오후 4시부터 40분간 한미동맹과 북핵 해법
+    </div>
+
+    <div class="note">
+        강 장관과 틸러슨 장관은 이날 오후 4시부터 40분간 한미동맹과 북핵 해법, 사드(THAAD·고고도 미사일 방어체계) 배치 문제 등 정상회담 의제를 최종 조율했다
+    </div>
+</body>
+
+</html>

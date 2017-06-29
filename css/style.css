@@ -102,7 +102,7 @@ a {
     background-color: #fff;
     border-radius: 0 0 15px 15px;
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 40px 0;
 }
 
 
@@ -164,7 +164,7 @@ a {
     position: relative;
 }
 
-.main-menu>li>a {
+.main-menu span {
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     color: rgba(255, 255, 255, 0.93);
@@ -175,11 +175,14 @@ a {
     text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
 }
 
-.main-menu>li>a:hover {
+.main-menu span:hover,
+.main-menu span:focus {
     color: hsla(35, 80%, 70%, 1);
+    outline: 0;
 }
 
-.main-menu>li>a:hover:after {
+.main-menu span:hover::after,
+.main-menu span:focus::after {
     content: "";
     display: block;
     border-top: 2px solid #181818;
@@ -187,7 +190,6 @@ a {
 
 .main-menu ul {
     list-style-type: none;
-    background: lime;
     position: absolute;
     white-space: nowrap;
     top: 47px;
@@ -209,30 +211,39 @@ a {
     content: "c";
 }
 
-.about-html {
+.main-menu ul a {
+    padding: 8px 15px 7px 0;
     display: block;
-    top: 0;
+}
+
+.about-html {
+    display: none;
     left: 0;
 }
 
 .about-css {
     display: none;
+    left: 0;
 }
 
 .web-standards {
     display: none;
+    left: 0;
 }
 
 .web-accesibility {
     display: none;
+    left: -140px;
 }
 
 .qna {
     display: none;
+    left: -170px;
 }
 
 .archive {
     display: none;
+    right: -25px;
 }
 
 .visual {

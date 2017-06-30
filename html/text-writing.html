@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 애니메이션</title>
+    <style>
+        body {
+            background: silver;
+            font-family: sans-serif;
+            margin: 50px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 50px;
+        }
+        
+        p {
+            color: lightseagreen;
+            font-size: 50px;
+            font-weight: bolder;
+            animation: text-writing 5s infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        @keyframes text-writing {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 950px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text Writing Animation</h1>
+    <p>Welcome to CSS Animation 활용하기</p>
+</body>
+
+</html>

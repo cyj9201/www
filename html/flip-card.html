@@ -10,6 +10,7 @@
             height: 260px;
             position: relative;
             perspective: 500px;
+            background: url("../images/")
         }
         
         #card {
@@ -46,15 +47,21 @@
 <body>
     <div class="container">
         <div id="card">
-            <div class="front">앞</div>
-            <div class="back">뒤</div>
+            <image class="front" src="http://darlenedesign.com/wordpress/wp-content/uploads/2012/05/2012.05.23-owlflip1.jpg"></image>
+            <image class="back" src="https://i.ytimg.com/vi/v3rMNLUxS3c/hqdefault.jpg"></image>
         </div>
     </div>
+    <button class="btn">Click Me!</button>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
         $(function() {
             $("#card").click(function() {
-                $(this).toggleClass("flipped")
+                $(this), toggleClass("flipped")
+            });
+        });
+        $(function() {
+            $(".btn").on("click", function() {
+                $("#card").toggleClass("flipped");
             });
         });
     </script>

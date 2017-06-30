@@ -32,7 +32,7 @@ $(function() {
 |:---:|---:|---:|
 | 점수| 100| 90 |
 --------
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DXRRhntFReGDXLU8zZrosMd7bog07zhrW9oa5cnJfreFgaEt" width="150px" align="right">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5DXRRhntFReGDXLU8zZrosMd7bog07zhrW9oa5cnJfreFgaEt" width="150px" height="100px">
 
 이것은 ~~마크다운~~ **문법**입니다.
 

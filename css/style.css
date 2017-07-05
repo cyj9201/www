@@ -75,6 +75,7 @@ html {
 body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
+    line-height: 1.15;
 }
 
 input,
@@ -129,7 +130,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 60px;
 }
 
@@ -483,6 +484,66 @@ a {
 .validation-list a {
     display: block;
 }*/
+
+
+/* 웹 관련 용어*/
+
+.term {
+    background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+    margin-top: 20px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.term-list-thumbnail,
+.term-list-brief {
+    margin: 0px;
+}
+
+.term-heading {
+    font-size: 1.5rem;
+    font-family: "Noto Sans Bold";
+}
+
+.term-list {
+    margin: 10px 0 0 0;
+}
+
+.term-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.term-list-subject,
+.term-list-brief {
+    float: right;
+    width: 145px;
+}
+
+.term-list-subject {
+    color: #296897;
+    font-family: "Noto Sans Bold";
+}
+
+.term-list-thumbnail {
+    float: left;
+    margin: 0;
+}
+
+.term-list-brief {
+    margin: 1px;
+}
+
+.even .term-list-subject,
+.even .term-list-brief {
+    float: left;
+}
+
+.even .term-list-thumbnail {
+    float: right;
+}
 
 .slogan {
     height: 10vh;

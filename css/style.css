@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "fontello.css";
 
 /* 웹폰트 선언 */
 
@@ -73,6 +74,15 @@ html {
 body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 
@@ -373,7 +383,7 @@ a {
 }
 
 .user-pw {
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .login-form label {
@@ -394,10 +404,14 @@ a {
     width: 50px;
     height: 50px;
     position: absolute;
-    padding: 0 2px;
+    padding: 0;
     top: 0;
     right: 0;
     cursor: pointer;
+    background: hsla(0, 100%, 70%, 1);
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.2rem;
 }
 
 .member {
@@ -405,8 +419,30 @@ a {
     background: #fff;
     border-radius: 0 0 5px 5px;
     list-style-type: none;
-    display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+
+/* 플로트 이슈를 해결하기 위한 clearfix */
+
+.member::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-user::before,
+.icon-right-open::before {
+    color: red;
+}
+
+.join {
+    float: left;
+}
+
+.find {
+    float: right;
 }
 
 .slogan {

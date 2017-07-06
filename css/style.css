@@ -590,7 +590,6 @@ a {
 /* 공지사항 및 자료실*/
 
 .board {
-    background: yellow;
     margin-top: 20px;
     position: relative;
     height: 180px;
@@ -722,6 +721,108 @@ a {
     background: white;
     color: orange;
 }*/
+
+
+/* 새소식 */
+
+.news {
+    background: yellow;
+    margin-top: 20px;
+    position: relative;
+}
+
+.news-heading {
+    background: lime;
+    font-size: 1.6rem;
+    color: #e0652c;
+}
+
+.news-item-thumbnail {
+    background: orange;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.news-more {
+    background: pink;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+}
+
+.news-item {
+    background: skyblue;
+    margin-top: 30px;
+    padding-left: 130px;
+    position: relative;
+}
+
+.news-item a {
+    display: block;
+}
+
+
+/*.news {
+    background: yellow;
+    margin-top: 20px;
+    position: relative;
+}
+
+.news-heading {
+    background: yellowgreen;
+    font-size: 20px;
+    color: red;
+}
+
+.news-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.news-item-thumbnail {
+    background: red;
+    float: left;
+    margin: 0;
+}
+
+.news-item-heading,
+.news-item-date,
+.news-item-brief {
+    float: right;
+    width: 200px;
+}
+
+.news-item-heading {
+    background: lime;
+}
+
+.news-item-date {
+    background: blue;
+}
+
+.news-item-brief {
+    background: orange;
+}
+
+.news-more {
+    background: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-more::before {
+    content: "p";
+    font-family: "webcafeIcon";
+    color: hsla(120, 100%, 30%, 1);
+}*/
+
+
+/* 슬로건 */
 
 .slogan {
     height: 10vh;

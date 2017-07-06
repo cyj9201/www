@@ -60,7 +60,7 @@ h3,
 h4,
 h5,
 h6,
-p {
+{
     font-size: 1em;
     font-weight: normal;
 }
@@ -543,6 +543,48 @@ a {
 
 .even .term-list-thumbnail {
     float: right;
+}
+
+
+/* 검색폼 */
+
+.search {
+    background: linear-gradient(to bottom, #ccc, #fff);
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 25px 5px 25px;
+}
+
+.search-form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.search-form label::before {
+    content: "z";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}
+
+.search-form input {
+    width: 195px;
+    height: 24px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 1px 1px 5px;
+    margin: 0 5px;
+}
+
+.btn-search {
+    border: 1px solid #aaa;
+    padding: 0 10px;
+    height: 24px;
+    border-radius: 3px;
+    color: #fff;
+    background: linear-gradient(to bottom, #666, #ccc);
 }
 
 .slogan {
